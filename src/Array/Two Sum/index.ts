@@ -23,9 +23,9 @@ export function twoSum(nums: number[], target: number): number[] {
     const hashMap = new Map();
 
     for(let i = 0; i< nums.length; i++) {
-        const relevantPair = target - nums[i]
+        const relevantPair = target - nums[i] // subtract target value from current number
 
-        const relevantPairIndex = hashMap.get(relevantPair)
+        const relevantPairIndex = hashMap.get(relevantPair) // look for it in hashMap
         if(relevantPairIndex !== undefined  && relevantPairIndex !== i ){
             sumIndex = [i, relevantPairIndex];
             break
@@ -33,5 +33,5 @@ export function twoSum(nums: number[], target: number): number[] {
         hashMap.set(nums[i], i)
 
     }
-    return sumIndex
+    return sumIndex || []
 };

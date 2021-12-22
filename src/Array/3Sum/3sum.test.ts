@@ -1,6 +1,6 @@
 import { threeSum } from "./3sum";
 
-describe.each([
+describe.skip.each([
   {
     array: [-1, 0, 1, 2, -1, -4],
     result: [

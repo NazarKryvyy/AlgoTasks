@@ -1,4 +1,3 @@
-import { twoSum } from "../Two Sum";
 import { removeDuplicates } from "./index";
 
 describe.skip.each([
